@@ -1,0 +1,116 @@
+/* ===== Maple Heights RWA — motion layer (loaded on every page) ===== */
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-100%)}to{opacity:1;transform:none}}
+@keyframes riseIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fadeScale{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.9) translateY(10px)}to{opacity:1;transform:none}}
+@keyframes growUp{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes drawIn{from{opacity:0}}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(245,166,35,.55)}70%{box-shadow:0 0 0 14px rgba(245,166,35,0)}100%{box-shadow:0 0 0 0 rgba(245,166,35,0)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes sheen{from{transform:translateX(-120%) skewX(-20deg)}to{transform:translateX(220%) skewX(-20deg)}}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 0 0 rgba(15,118,110,.45)}60%{box-shadow:0 0 0 10px rgba(15,118,110,0)}}
+@keyframes gradientDrift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* Page load */
+body{animation:pageIn .6s ease both;overflow-x:clip}
+.site-header,.dash-top,.auth-nav{animation:slideDown .55s cubic-bezier(.2,.8,.2,1) both}
+.sidebar{animation:pageIn .8s ease .2s both}
+
+/* Hero + page hero + auth: staggered entrance */
+.hero-copy>*,.page-hero .container>*,.hero-panel,.auth-box>*,.auth-visual>div>*{animation:riseIn .8s cubic-bezier(.2,.8,.2,1) both}
+.hero-copy>*:nth-child(1),.page-hero .container>*:nth-child(1),.auth-box>*:nth-child(1){animation-delay:.15s}
+.hero-copy>*:nth-child(2),.page-hero .container>*:nth-child(2),.auth-box>*:nth-child(2){animation-delay:.28s}
+.hero-copy>*:nth-child(3),.page-hero .container>*:nth-child(3),.auth-box>*:nth-child(3){animation-delay:.41s}
+.hero-copy>*:nth-child(4),.auth-box>*:nth-child(4){animation-delay:.54s}
+.hero-copy>*:nth-child(5),.auth-box>*:nth-child(5){animation-delay:.67s}
+.auth-box>*:nth-child(n+6){animation-delay:.8s}
+.hero-panel{animation-name:fadeScale;animation-delay:.45s}
+.auth-visual>div>*{animation-delay:.35s}
+
+/* Scroll reveal (JS adds .reveal, then .in when visible). Without JS everything stays visible. */
+html.js .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease var(--d,0s),transform .7s cubic-bezier(.2,.8,.2,1) var(--d,0s)}
+html.js .reveal.from-left{transform:translateX(-36px)}
+html.js .reveal.from-right{transform:translateX(36px)}
+html.js .reveal.zoom{transform:scale(.94)}
+html.js .reveal.in{opacity:1;transform:none}
+html[dir="rtl"].js .reveal.from-left{transform:translateX(36px)}
+html[dir="rtl"].js .reveal.from-right{transform:translateX(-36px)}
+
+/* Hover + micro-interactions */
+.card,.svc,.stat,.value,.info-card,.quote,.step,.kpi,.month,.qtile{transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s ease,border-color .3s ease}
+.card:hover,.svc:hover,.stat:hover,.value:hover,.info-card:hover,.quote:hover,.step:hover,.kpi:hover,.month:hover,.qtile:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,40,58,.16)}
+.card .media{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.card:hover .media{transform:scale(1.07)}
+.mosaic .media,.split>.media,.ann-photo{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s ease,filter .5s ease}
+.mosaic .media:hover{transform:scale(1.025);z-index:2;box-shadow:0 18px 40px rgba(0,0,0,.28);filter:saturate(1.1)}
+.split>.media:hover,.ann-photo:hover{transform:scale(1.015)}
+.ico{transition:transform .35s cubic-bezier(.2,.8,.2,1),background .3s ease}
+.svc:hover .ico,.qtile:hover .ico,.info-card:hover .ico,.cstrip:hover .ico,.vrow:hover .ico{transform:translateY(-3px) rotate(-8deg) scale(1.08)}
+.badge{animation:floatY 3.2s ease-in-out infinite}
+.tick{transition:transform .3s ease}
+.check-list li:hover .tick{transform:scale(1.15) rotate(8deg)}
+.ann,.notice,.notice-row{transition:transform .25s ease,box-shadow .25s ease}
+.ann:hover,.notice:hover{transform:translateX(6px);box-shadow:var(--shadow)}
+[dir="rtl"] .ann:hover,[dir="rtl"] .notice:hover{transform:translateX(-6px)}
+.chip{transition:background .25s ease,color .25s ease,border-color .25s ease,transform .2s ease}
+.chip:hover{transform:translateY(-2px)}
+.nav-link{transition:color .2s ease}
+.nav-link.active::after{animation:drawIn .4s ease both}
+.dd-menu{transform-origin:top;}
+.has-dd.open .dd-menu{animation:fadeScale .2s ease both}
+.icon-btn,.user-chip,.footer-social a{transition:transform .25s ease,border-color .2s ease,color .2s ease,background .2s ease,box-shadow .2s ease}
+.icon-btn:hover,.footer-social a:hover{transform:translateY(-2px) rotate(-6deg)}
+.back-top{animation:floatY 2.6s ease-in-out infinite}
+.back-top:hover{background:var(--brand-dark)}
+.timeline li::before{animation:dotPulse 2.4s ease-out infinite}
+.hero h1 span{background:linear-gradient(90deg,#f5a623,#ffd27a,#f5a623);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:gradientDrift 6s ease-in-out infinite;text-shadow:none}
+
+/* Buttons: lift + shine sweep */
+.btn{position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease,border-color .25s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(15,118,110,.28)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-primary::after,.btn-light::after{content:"";position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:translateX(-120%) skewX(-20deg);pointer-events:none}
+.btn-primary:hover::after,.btn-light:hover::after{animation:sheen .8s ease}
+.pinned .btn-primary,.hero-panel .btn-primary{animation:pulseRing 2.6s ease-out infinite}
+.link-more{transition:gap .25s ease}
+.link-more:hover{gap:12px}
+
+/* Charts grow in */
+.chart rect{transform-box:fill-box;transform-origin:bottom;animation:growUp .9s cubic-bezier(.2,.8,.2,1) both}
+.chart rect:nth-of-type(2){animation-delay:.08s}.chart rect:nth-of-type(3){animation-delay:.16s}.chart rect:nth-of-type(4){animation-delay:.24s}.chart rect:nth-of-type(5){animation-delay:.32s}.chart rect:nth-of-type(6){animation-delay:.4s}
+.chart circle,.chart polyline,.chart path{animation:drawIn 1s ease .2s both}
+
+/* Dashboard */
+.dpanel.active{animation:panelIn .45s cubic-bezier(.2,.8,.2,1) both}
+.side-link{transition:background .2s ease,color .2s ease,transform .2s ease}
+.side-link:hover{transform:translateX(4px)}
+[dir="rtl"] .side-link:hover{transform:translateX(-4px)}
+.modal.show{animation:pageIn .25s ease both}
+.modal.show .modal-box{animation:pop .35s cubic-bezier(.2,.8,.2,1) both}
+.dtable tbody tr{transition:background .2s ease}
+.dtable tbody tr:hover{background:rgba(15,118,110,.06)}
+.kpi strong{animation:fadeScale .6s ease both}
+
+/* FAQ + forms */
+.faq details{transition:box-shadow .25s ease,border-color .25s ease}
+.faq details[open]{border-color:var(--brand);box-shadow:var(--shadow)}
+.faq details[open] p{animation:panelIn .35s ease both}
+.field input,.field select,.field textarea{transition:border-color .2s ease,box-shadow .2s ease}
+.form-ok.show{animation:pop .4s ease both}
+
+@media (hover:none){
+  .card:hover,.svc:hover,.stat:hover,.value:hover,.info-card:hover,.quote:hover,.step:hover,.kpi:hover,.month:hover,.qtile:hover{transform:none;box-shadow:var(--shadow)}
+  .card:hover .media{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  html.js .reveal{opacity:1!important;transform:none!important}
+}
+
+/* Scroll-reveal slides sideways on desktop only; on phones/tablets use a vertical rise so nothing pokes past the screen edge */
+@media (max-width:1100px){
+  html.js .reveal.from-left,html.js .reveal.from-right,html[dir="rtl"].js .reveal.from-left,html[dir="rtl"].js .reveal.from-right{transform:translateY(30px)}
+  html.js .reveal.in{transform:none}
+}

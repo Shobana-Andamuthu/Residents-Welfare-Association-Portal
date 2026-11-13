@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maple Heights RWA | Home</title>
+<meta name="description" content="Residents portal for Maple Heights: notices, maintenance payments, clubhouse booking and complaints.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="256x256" href="assets/images/favicon-256.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<meta name="theme-color" content="#0f766e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<script src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand" aria-label="Maple Heights RWA home"><img class="brand-logo" src="assets/images/logo.png" alt="Maple Heights Residents Welfare Association" width="900" height="203"></a>
+    <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false"><svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg><svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="nav-links">
+        <li class="has-dd"><button class="nav-link dd-toggle active" aria-expanded="false">Home <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 4 4 4 4-4"/></svg></button>
+          <div class="dd-menu"><a href="index.html" class="active">Home 1</a><a href="home-2.html">Home 2</a></div></li>
+        <li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="facilities.html">Facilities</a></li><li><a class="nav-link" href="events.html">Events</a></li><li><a class="nav-link" href="contact.html">Contact</a></li><li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+      <div class="nav-actions"><div class="nav-tools"><button class="icon-btn" data-theme-toggle aria-label="Toggle light or dark mode"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><button class="icon-btn" data-dir-toggle aria-label="Toggle left-to-right or right-to-left">RTL</button></div><a href="login.html" class="btn btn-outline btn-nav">Login</a><a href="facilities.html#clubhouse" class="btn btn-primary btn-nav">Book Clubhouse</a></div>
+    </nav>
+  </div>
+</header>
+<main>
+<!-- 1. HERO -->
+<section class="hero hero-home" style="--hero-img:url('assets/images/pexels-19803911.jpg')">
+  <div class="container"><div class="hero-copy">
+    <span class="eyebrow">Maple Heights Residents Welfare Association</span>
+    <h1>A Better Way to Live <span>Together</span></h1>
+    <p>Pay maintenance, book the clubhouse and raise complaints from one simple resident portal.</p>
+    <div class="hero-actions"><a href="login.html" class="btn btn-primary">Pay Maintenance</a><a href="#notices" class="btn btn-ghost">View Notices</a></div>
+    <div class="hero-stats"><div><strong>480</strong><span>Families</span></div><div><strong>12</strong><span>Amenities</span></div><div><strong>24×7</strong><span>Security</span></div></div>
+  </div></div>
+</section>
+
+<!-- 2. NOTICES -->
+<section class="section" id="notices">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Notice Board</span><h2>Latest Community Notices</h2><p>Stay informed about maintenance, meetings and safety updates.</p></div>
+    <div class="board-top">
+      <div class="panel glance"><h3>Community at a Glance</h3>
+        <div><strong>94%</strong><span>Maintenance collected this month</span></div>
+        <div><strong>92%</strong><span>Complaints resolved within 48 hours</span></div>
+        <div><strong>12</strong><span>Active notices on the board</span></div></div>
+      <div class="panel"><h3>Maintenance Collection (%)</h3><svg class="chart" viewBox="0 0 520 250" role="img" aria-label="Maintenance collection by month"><line class="gl" x1="40" x2="508" y1="14.0" y2="14.0"/><text x="32" y="18.0" text-anchor="end">100</text><line class="gl" x1="40" x2="508" y1="65.5" y2="65.5"/><text x="32" y="69.5" text-anchor="end">75</text><line class="gl" x1="40" x2="508" y1="117.0" y2="117.0"/><text x="32" y="121.0" text-anchor="end">50</text><line class="gl" x1="40" x2="508" y1="168.5" y2="168.5"/><text x="32" y="172.5" text-anchor="end">25</text><line class="gl" x1="40" x2="508" y1="220.0" y2="220.0"/><text x="32" y="224.0" text-anchor="end">0</text><rect x="57.5" y="32.5" width="42.9" height="187.5" rx="6" style="fill:var(--brand)"><title>Jun: 91%</title></rect><text x="79.0" y="26.5" text-anchor="middle">91%</text><text x="79.0" y="242" text-anchor="middle">Jun</text><rect x="135.6" y="28.4" width="42.9" height="191.6" rx="6" style="fill:var(--brand)"><title>Jul: 93%</title></rect><text x="157.0" y="22.4" text-anchor="middle">93%</text><text x="157.0" y="242" text-anchor="middle">Jul</text><rect x="213.6" y="26.4" width="42.9" height="193.6" rx="6" style="fill:var(--brand)"><title>Aug: 94%</title></rect><text x="235.0" y="20.4" text-anchor="middle">94%</text><text x="235.0" y="242" text-anchor="middle">Aug</text><rect x="291.6" y="30.5" width="42.9" height="189.5" rx="6" style="fill:var(--brand)"><title>Sep: 92%</title></rect><text x="313.0" y="24.5" text-anchor="middle">92%</text><text x="313.0" y="242" text-anchor="middle">Sep</text><rect x="369.6" y="24.3" width="42.9" height="195.7" rx="6" style="fill:var(--brand)"><title>Oct: 95%</title></rect><text x="391.0" y="18.3" text-anchor="middle">95%</text><text x="391.0" y="242" text-anchor="middle">Oct</text><rect x="447.6" y="38.7" width="42.9" height="181.3" rx="6" style="fill:var(--brand)"><title>Nov: 88%</title></rect><text x="469.0" y="32.7" text-anchor="middle">88%</text><text x="469.0" y="242" text-anchor="middle">Nov</text></svg></div>
+      <div class="panel"><h3>Notices by Category</h3><svg class="chart" viewBox="0 0 520 190" role="img" aria-label="Notices by category"><g transform="translate(260 95) rotate(-90)"><circle r="70" fill="none" style="stroke:var(--border)" stroke-width="28"/><circle r="70" fill="none" style="stroke:var(--brand)" stroke-width="28" stroke-dasharray="183.3 256.6" stroke-dashoffset="0.0"><title>Maintenance: 5</title></circle><circle r="70" fill="none" style="stroke:var(--accent)" stroke-width="28" stroke-dasharray="110.0 329.9" stroke-dashoffset="-183.3"><title>Events: 3</title></circle><circle r="70" fill="none" style="stroke:#d93a3a" stroke-width="28" stroke-dasharray="73.3 366.5" stroke-dashoffset="-293.2"><title>Safety: 2</title></circle><circle r="70" fill="none" style="stroke:#1d4e6b" stroke-width="28" stroke-dasharray="73.3 366.5" stroke-dashoffset="-366.5"><title>Meetings: 2</title></circle></g><text x="260" y="104" text-anchor="middle" style="font:700 26px Outfit,sans-serif;fill:var(--text)">12</text></svg><div class="legend"><span><i style="background:var(--brand)"></i>Maintenance (5)</span><span><i style="background:var(--accent)"></i>Events (3)</span><span><i style="background:#d93a3a"></i>Safety (2)</span><span><i style="background:#1d4e6b"></i>Meetings (2)</span></div></div>
+    </div>
+    <div class="grid grid-4 notice-cards"><article class="card ncard"><div class="media" role="img" aria-label="Maintenance bills and calculator" style="--img:url('assets/images/pexels-5900233.jpg')"><div class="badge"><strong>14</strong>Nov</div></div><div class="card-body"><span class="pill warn">Maintenance</span><h3>November Dues</h3><p>&#8377;3,200 per flat, pay by 15 Nov.</p></div></article><article class="card ncard"><div class="media" role="img" aria-label="Water tank on a building roof" style="--img:url('assets/images/pexels-12404788.jpg')"><div class="badge"><strong>18</strong>Nov</div></div><div class="card-body"><span class="pill ">Maintenance Work</span><h3>Water Tank Cleaning</h3><p>Water off 10 AM &ndash; 2 PM, Tower A &amp; B.</p></div></article><article class="card ncard"><div class="media" role="img" aria-label="Residents meeting in a conference room" style="--img:url('assets/images/pexels-7643900.jpg')"><div class="badge"><strong>22</strong>Nov</div></div><div class="card-body"><span class="pill ok">Meeting</span><h3>General Body Meeting</h3><p>Budget and clubhouse upgrade, 6 PM.</p></div></article><article class="card ncard"><div class="media" role="img" aria-label="Fire extinguisher on a wall" style="--img:url('assets/images/pexels-4381988.jpg')"><div class="badge"><strong>25</strong>Nov</div></div><div class="card-body"><span class="pill bad">Safety</span><h3>Fire Safety Drill</h3><p>Evacuation drill for all towers, 11 AM.</p></div></article></div>
+    <div class="panel strip-contacts"><h3>Important Contacts</h3><div class="cstrip"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><strong>Security Desk (24×7)</strong><span>+91 80 4567 8901</span></div></div><div class="cstrip"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div><div><strong>Maintenance Office</strong><span>+91 80 4567 8902</span></div></div><div class="cstrip"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s5 4 5 9a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3 1-5 1-8z"/></svg></div><div><strong>Fire &amp; Medical Emergency</strong><span>+91 80 4567 8999</span></div></div><div class="cstrip"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><strong>Society Manager</strong><span>Mr. Ramesh Iyer</span></div></div></div>
+  </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Resident Services</span><h2>Everything You Need, Online</h2><p>Handle everyday society tasks in a few clicks from your dashboard.</p></div>
+    <div class="grid grid-4">
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><h3>Pay Maintenance</h3><p>View invoices, pay online and download receipts instantly.</p><a href="login.html" class="link-more">Pay now &rarr;</a></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3>Book Clubhouse</h3><p>Check slot availability and reserve the clubhouse for your event.</p><a href="facilities.html#clubhouse" class="link-more">Book a slot &rarr;</a></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Raise Complaints</h3><p>Report issues and track their status until they are resolved.</p><a href="login.html" class="link-more">Raise complaint &rarr;</a></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Visitor &amp; Security</h3><p>Guests are verified at the gate with approvals from residents.</p><a href="about.html" class="link-more">About security &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ABOUT -->
+<section class="section">
+  <div class="container split">
+    <div class="media wide" role="img" aria-label="Residents gathered in the community garden" style="--img:url('assets/images/pexels-31874011.jpg')"></div>
+    <div>
+      <span class="eyebrow">About Our Community</span><h2>Managed by Residents, for Residents</h2>
+      <p>Maple Heights RWA is an elected body that looks after maintenance, security, shared facilities and community life for 480 families across three towers.</p>
+      <ul class="check-list">
+        <li><span class="tick">&#10003;</span><div><h4>Transparent Accounts</h4><p>Monthly collection and expense summaries shared with every resident.</p></div></li>
+        <li><span class="tick">&#10003;</span><div><h4>Quick Issue Resolution</h4><p>Most complaints are acknowledged within 4 working hours.</p></div></li>
+        <li><span class="tick">&#10003;</span><div><h4>Active Community</h4><p>Festivals, sports days and clean-up drives all year round.</p></div></li>
+      </ul>
+      <a href="about.html" class="btn btn-primary">Know More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. FACILITIES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Our Facilities</span><h2>Amenities for Every Age</h2><p>Well-maintained shared spaces for relaxation, fitness and celebration.</p></div>
+    <div class="grid grid-3">
+      <article class="card"><div class="media " role="img" aria-label="Clubhouse hall" style="--img:url('assets/images/pexels-35017879.jpg')"></div><div class="card-body"><span class="tag">Bookable</span><h3>Clubhouse</h3><p>Air-conditioned hall with a pantry, sound system and seating for 120 guests.</p><p class="meta"><span>Up to 120 guests</span><span>8 AM – 11 PM</span></p><a href="facilities.html" class="link-more">View details &rarr;</a></div></article>
+      <article class="card"><div class="media " role="img" aria-label="Swimming pool" style="--img:url('assets/images/pexels-30463419.jpg')"></div><div class="card-body"><span class="tag">Recreation</span><h3>Swimming Pool</h3><p>Temperature-controlled pool with a children's section and lifeguard on duty.</p><p class="meta"><span>6 AM – 9 PM</span><span>Lifeguard on duty</span></p><a href="facilities.html" class="link-more">View details &rarr;</a></div></article>
+      <article class="card"><div class="media " role="img" aria-label="Fitness studio" style="--img:url('assets/images/pexels-12250460.jpg')"></div><div class="card-body"><span class="tag">Fitness</span><h3>Fitness Studio</h3><p>Modern cardio and strength equipment with a trainer available in the mornings.</p><p class="meta"><span>5:30 AM – 10 PM</span><span>Trainer 6 – 10 AM</span></p><a href="facilities.html" class="link-more">View details &rarr;</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. EVENTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Upcoming Events</span><h2>Celebrate With Your Neighbours</h2><p>Mark your calendar for the next community gatherings.</p></div>
+    <div class="grid grid-3">
+      <article class="card"><div class="media " role="img" aria-label="General body meeting" style="--img:url('assets/images/pexels-7869128.jpg')"><div class="badge"><strong>22</strong>Nov</div></div><div class="card-body"><span class="tag">Meeting</span><h3>General Body Meeting</h3><p>Discuss the annual budget and clubhouse upgrade with the committee.</p><p class="meta"><span>Community Hall, 6:00 PM</span></p><a href="events.html" class="link-more">Event details &rarr;</a></div></article>
+      <article class="card"><div class="media " role="img" aria-label="Food carnival" style="--img:url('assets/images/pexels-14494034.jpg')"><div class="badge"><strong>06</strong>Dec</div></div><div class="card-body"><span class="tag">Festival</span><h3>Winter Food Carnival</h3><p>Food stalls, music and games for all ages on the central lawn.</p><p class="meta"><span>Central Lawn, 4:00 PM</span></p><a href="events.html" class="link-more">Event details &rarr;</a></div></article>
+      <article class="card"><div class="media " role="img" aria-label="Community dinner" style="--img:url('assets/images/pexels-5778898.jpg')"><div class="badge"><strong>25</strong>Dec</div></div><div class="card-body"><span class="tag">Celebration</span><h3>Christmas Community Dinner</h3><p>Potluck dinner, carols and a visit from Santa for the children.</p><p class="meta"><span>Clubhouse, 7:00 PM</span></p><a href="events.html" class="link-more">Event details &rarr;</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. VOICES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Resident Voices</span><h2>What Our Neighbours Say</h2></div>
+    <div class="voices">
+      <div class="voice-main"><span class="mark">&ldquo;</span><p>Paying maintenance online saves me a trip to the office every month. The receipts are instant, and I can see every past payment in one place.</p><footer><span class="avatar"><img src="assets/images/avatar-anita.jpg" alt="Anita Nair" width="200" height="200" loading="lazy"></span><div><strong>Anita Nair</strong><small>Tower B, Flat 1204</small></div></footer></div>
+      <div class="voice-side">
+        <div class="quote"><p>&ldquo;Booking the clubhouse for my daughter's birthday took two minutes. Slots are clearly shown.&rdquo;</p><footer><span class="avatar"><img src="assets/images/avatar-rahul.jpg" alt="Rahul Khanna" width="200" height="200" loading="lazy"></span><div><strong>Rahul Khanna</strong><small>Tower A, Flat 804</small></div></footer></div>
+        <div class="quote"><p>&ldquo;My complaint about a lift issue was acknowledged within hours and fixed the next day.&rdquo;</p><footer><span class="avatar"><img src="assets/images/avatar-sunita.jpg" alt="Sunita Mehta" width="200" height="200" loading="lazy"></span><div><strong>Sunita Mehta</strong><small>Tower C, Flat 306</small></div></footer></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CTA -->
+<section class="cta" style="--hero-img:url('assets/images/pexels-5638605.jpg')">
+  <div class="container"><h2>Your Community, One Portal</h2><p>Create your resident account to pay dues, book facilities and stay connected.</p><div class="hero-actions"><a href="create-account.html" class="btn btn-primary">Create Account</a><a href="login.html" class="btn btn-ghost">Resident Login</a></div></div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a href="index.html" class="brand" aria-label="Maple Heights RWA home"><img class="brand-logo" src="assets/images/logo-dark.png" alt="Maple Heights Residents Welfare Association" width="900" height="203"></a><p>A well-run, friendly community for 480 families, managed by elected residents.</p>
+      <div class="footer-social"><a href="contact.html" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8V6.5c0-.7.2-1 1.1-1H17V2h-2.6C11.5 2 10 3.7 10 6.2V8H8v3.5h2V22h4V11.5h2.7L17 8z"/></svg></a><a href="contact.html" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="contact.html" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z" fill="currentColor" stroke="none"/></svg></a></div></div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="events.html">Events</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Residents</h4><ul><li><a href="login.html">Login</a></li><li><a href="create-account.html">Create Account</a></li><li><a href="dashboard.html">Dashboard</a></li></ul></div>
+    <div><h4>Contact Us</h4><ul class="footer-contact"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Maple Heights, Phase 2, Whitefield Main Road, Bengaluru 560066</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+918045678900">+91 80 4567 8900</a></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:office@mapleheightsrwa.in">office@mapleheightsrwa.in</a></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Office: Mon–Sat, 9:00 AM – 6:00 PM</span></li></ul></div>
+  </div>
+  <div class="container footer-bottom">&copy; <span id="year">2026</span> Maple Heights Residents Welfare Association. All rights reserved.</div>
+</footer>
+<button class="back-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></button>
+</body>
+</html>
